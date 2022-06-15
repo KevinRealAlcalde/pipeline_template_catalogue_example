@@ -16,6 +16,7 @@ pipeline {
               echo "${repoUrl}"
               
               echo "${branchName}"
+              sh "sh wololo.sh"
           }
         }
     }
