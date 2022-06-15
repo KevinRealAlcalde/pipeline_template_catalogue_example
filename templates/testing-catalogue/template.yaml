@@ -4,5 +4,7 @@ version: 1
 name: Pipeline Template Catalogue Test
 description: Pipeline Template Catalogue Test yekale
 parameters:
-  - name: emailRecipient
-    displayName: Email address for build notifications
+  - name: branchName
+    displayName: branch
+  - name: repoUrl
+    displayName: repoUrl
