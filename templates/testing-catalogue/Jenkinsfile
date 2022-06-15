@@ -14,9 +14,8 @@ pipeline {
                        submoduleCfg: [],
                        userRemoteConfigs: [[url: "${repoUrl}"]]])
               echo "${repoUrl}"
-              
-              echo "${branchName}"
               sh "sh wololo.sh"
+              echo "${branchName}"
           }
         }
     }
