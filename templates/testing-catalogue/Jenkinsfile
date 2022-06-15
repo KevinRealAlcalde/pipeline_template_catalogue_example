@@ -1,9 +1,19 @@
 pipeline {
     agent any
+    options {
+        skipDefaultCheckout true
+    }
     stages {
         stage('wololo') {
           steps {
             echo "wololo"
+            checkout ([$class: "GitSCM",
+                       branches: [[name: "${branchName}"]],
+                       doGenerateSubmoduleConfigurations: false,
+                       extensions: [],
+                       submoduleCfg: [],
+                       userRemoteConfigs: [[url: "${repoUrl}"]]]
+            )
           }
         }
     }
