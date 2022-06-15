@@ -12,8 +12,10 @@ pipeline {
                        doGenerateSubmoduleConfigurations: false,
                        extensions: [],
                        submoduleCfg: [],
-                       userRemoteConfigs: [[url: "${repoUrl}"]]]
-            )
+                       userRemoteConfigs: [[url: "${repoUrl}"]]])
+              echo "${repoUrl}"
+              
+              echo "${branchName}"
           }
         }
     }
