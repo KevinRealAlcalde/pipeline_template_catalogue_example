@@ -18,8 +18,10 @@ pipeline {
           }
         }
         stage('dafuq') {
-            echo "caralho"
-              sh "sh wololo.sh"
+            steps {
+                echo "caralho"
+                sh "sh wololo.sh"
+            }
         }
     }
 }
