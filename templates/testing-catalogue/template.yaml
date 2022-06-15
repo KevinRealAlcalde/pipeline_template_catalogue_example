@@ -1,0 +1,8 @@
+type: pipeline-template
+version: 1
+
+name: Pipeline Template Catalogue Test
+description: Pipeline Template Catalogue Test yekale
+parameters:
+  - name: emailRecipient
+    displayName: Email address for build notifications
