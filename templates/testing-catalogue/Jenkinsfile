@@ -14,9 +14,12 @@ pipeline {
                        submoduleCfg: [],
                        userRemoteConfigs: [[url: "${repoUrl}"]]])
               echo "${repoUrl}"
-              sh "sh wololo.sh"
               echo "${branchName}"
           }
+        }
+        stage('dafuq') {
+            echo "caralho"
+              sh "sh wololo.sh"
         }
     }
 }
