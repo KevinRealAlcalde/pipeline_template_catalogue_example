@@ -6,6 +6,6 @@ description: Pipeline Template Catalogue Test yekale
 parameters:
   - name: branchName
     displayName: branch
-    default: "main"
+    defaultValue: main
   - name: repoUrl
     displayName: repoUrl
